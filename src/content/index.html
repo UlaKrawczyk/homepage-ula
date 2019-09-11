@@ -1,40 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Site title</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4decf178c1.js"></script>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-    <script src="js/main.js"></script>
-  </body>
+<body>
+  <header class="site-header">
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a class="navigation__link" href="index.html">strona główna</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#diary">pamiętniczek</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#glossary">technologie</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-times offIcon"></i>
+    </div>
+  </header>
+
+  <main>
+    <header class="header">
+      <h1 id="top" class="header__text header__text--js">Ula Krawczyk - kim jestem</h1>
+      <button class="header__button header__button--js">zmień treść</button>
+    </header>
+
+    <section class="about">
+      <h2 class="about__header">kilka słów o mnie</h2>
+      <img class="about__image" src="../assets/img/paint-2985569_640.jpg" alt=" ula">
+      <p class="about__paragraph">Z zawodu marketingowiec, duchem przyszły programista. Odkryłam w sobie nową pasję i
+        zamierzam nią podążać choćby nie wiem co:) Może to będzie tylko hobby, może nowy zawód, a może jakieś fajne
+        projekty poboczne. Czas pokaże... Na teraz to fantastyczna przygoda!
+      </p>
+      <p class="about__paragraph about__paragraph--js"></p>
+      <p class="about__paragraph about__paragraph--mod-1">Z zawodu marketingowiec, duchem przyszły programista. Odkryłam
+        w sobie nową pasję i
+        zamierzam
+        nią podążać choćby nie wiem co:) Może to będzie tylko hobby, może nowy zawód, a może jakieś fajne projekty
+        poboczne. Czas
+        pokaże... Na teraz to fantastyczna przygoda!
+      </p>
+      <div class="clear"></div>
+    </section>
+
+    <section id="diary" class="diary">
+
+      <h2 class="diary__header">Pamiętniczek</h2>
+
+      <article class="diary__article">
+        <h3 class="diary__second-header">Nowy kurs - nowe możliwości</h2>
+          <p class="diary__paragraph">Uczę się frontendu już od kilku miesięcy, ale ciągle brakuje mi czasu. Zrobiłam
+            kursy
+            Samuraja (bardzo fajne) i <strong>teraz</strong> chciałabym sobie poukładać w głowie wszystkie tematy.
+          </p>
+          <a class="diary__link" href="nowyKurs.html">przejdź do całego artykułu</a>
+      </article>
+
+      <article class="diary__article">
+        <h3 class="diary__second-header">Czy czekanie na trudniejsze treści jest trudne?</h2>
+          <p class="diary__paragraph">Pewnie, że tak. Szczególnie jak się już zaszło dość daleko. Natomiast okazuje się,
+            że
+            czasem warto wrócić do podstaw, bo różne detale pouciekały z głowy przy natłoku wiedzy.
+          </p>
+          <a class="diary__link" href="czekanie.html">przejdź do całego artykułu</a>
+      </article>
+
+      <article class="diary__article">
+        <h3 class="diary__second-header">Ciągle mam niedosyt...</h3>
+        <p class="diary__paragraph">Byłoby idealnie gdyby autor publikować trochę więcej contentu przez pierwsze
+          tygodnie. Boję
+          się, że teraz jest light a potem będzie natłok materiału. Pożyjemy, zobaczymy:)</p>
+        <a class="diary__link" href="niedosyt.html">przejdź do całego artykułu</a>
+      </article>
+
+      <article class="diary__article">
+        <h3 class="diary__second-header">Wracam z nowymi siłami po wakacjach:)</h3>
+        <p class="diary__paragraph">Bardzo dużo materiału do przerobienia, kurs cotenfrontend skończył się, a ja
+          zostałam dalego w tyle. No cóż czas zakasać rękawy i brać się do roboty!</p>
+        <a class="diary__link" href="nowyKurs.html">przejdź do całego artykułu</a>
+      </article>
+
+      <article class="diary__article">
+        <h3 class="diary__second-header">W tym tygodniu poznam trochę backendu - będzie wyzwanie!</h3>
+        <p class="diary__paragraph">Powtórka sass'a przyda się, bo kilka miesięcy minęło od czasu kiedy go uczyłam się
+          pierwszy raz. Jestem ciekawa jak Maciek do niego podejdzie. No i na szczęście będzie jeszcze raz npm...</p>
+        <a class="diary__link" href="nowyKurs.html">przejdź do całego artykułu</a>
+      </article>
+    </section>
+
+    <section id="glossary" class="glossary">
+      <h2 class="glossary__header">Technologie do opanowania:</h2>
+      <dl>
+        <dt class="glossary__title">CSS</dt>
+        <dd class="glossary__definition">cascading style sheets</dd>
+        <dt class="glossary__title">HTML</dt>
+        <dd class="glossary__definition">hipertext mockup language</dd>
+        <dt class="glossary__title">javascript </dt>
+        <dt class="glossary__title">es6</dt>
+        <dd class="glossary__definition">rzeczy, których teraz się uczę</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#top" class="footer__top footer__link">na górę</a>
+    <p class="footer__paragraph">@Ula Krawczyk - uczę się frontendu, ponieważ sprawia mi niesamowitą frajdę.</p>
+    <p class="footer__paragraph">@Ula Krawczyk - nowe commity powstają:).</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
