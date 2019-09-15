@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext');
 
 
 *,
@@ -91,6 +92,7 @@ main {
   &__text {
     color: #40476D;
     font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
 
     &--red {
       color: tomato;
