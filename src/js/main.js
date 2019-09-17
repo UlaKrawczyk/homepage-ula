@@ -64,3 +64,17 @@ hamburgerMenu.addEventListener('click', function () {
   hamburgerMenu.style.color = "#999";
   header.classList.toggle('marginGoesDown');
 });
+
+
+const person = {
+  name: 'ula',
+  age: 40,
+  city: 'wroclaw'
+}
+
+console.log(person);
+
+const jsonPerson = JSON.stringify(person);
+console.log(jsonPerson);
+
+localStorage.setItem('person', jsonPerson);
