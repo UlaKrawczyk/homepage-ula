@@ -48,3 +48,11 @@ hamburgerMenu.addEventListener('click', function () {
 });
 
 //input z pozostającym tekstem
+const focusInput = document.querySelector('.form__input--js');
+
+if (localStorage.getItem('focusInput')) {
+  focusInput.value = localStorage.getItem('focusInput');
+}
+focusInput.addEventListener('keyup', (e) => {
+  localStorage.setItem('focusInput', e.target.value);
+});
