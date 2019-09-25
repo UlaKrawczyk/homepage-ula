@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Arizonia|Damion&display=swap");
 // font-family: 'Damion', cursive;
-// font-family: 'Arizonia', cursive;
 
 *,
 *::after,
@@ -334,13 +333,31 @@ main {
 .footer {
   background-color: #444;
   margin-top: 2rem;
-  padding: 0.2rem 0 1rem 0;
-  text-align: center;
+  padding: 1rem 0 1rem 0;
+
+  &__wrapper {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__leaf {
+    height: 5rem;
+    margin-right: 2rem;
+    transition: transform 1s ease-in-out;
+
+    &:hover {
+      transform: rotate(360deg) scale(0.8);
+    }
+  }
 
   &__top {
     position: fixed;
     bottom: 15px;
-    right: 15px;
+    right: 25px;
   }
 
   &__link {
@@ -353,6 +370,11 @@ main {
 
   &__paragraph {
     color: white;
+    line-height: 160%;
+
+    @media (max-width: 870px) {
+      font-size: 14px;
+    }
   }
 }
 
