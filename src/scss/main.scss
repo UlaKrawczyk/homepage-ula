@@ -1,6 +1,9 @@
 @import "_normalize";
 @import "_variables";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Arizonia|Damion&display=swap");
+// font-family: 'Damion', cursive;
+// font-family: 'Arizonia', cursive;
 
 *,
 *::after,
@@ -28,6 +31,50 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+
+  &__wrapper {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 640px) {
+    display: none;
+  }
+
+  &__image {
+    height: 2.6rem;
+
+    @media (max-width: 765px) {
+      height: 2rem;
+    }
+  }
+
+  &__name {
+    font-family: "Damion", cursive;
+    font-size: 2.5rem;
+    color: #a5ce39;
+    margin-top: 4px;
+    margin-left: 7px;
+
+    @media (max-width: 765px) {
+      font-size: 2rem;
+    }
+  }
 }
 
 .navigation {
@@ -57,7 +104,7 @@ body {
     font-size: 18px;
     transition: 0.3s;
 
-    @media (max-width: 640px) {
+    @media (max-width: 765px) {
       font-size: 14px;
     }
 
@@ -84,7 +131,8 @@ main {
 }
 
 .header {
-  margin-top: 6rem;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
 
   &__text {
     color: #40476d;
@@ -345,6 +393,6 @@ main {
   }
 
   .marginGoesDown {
-    margin-top: 14rem;
+    margin-top: 15rem;
   }
 }
