@@ -6,21 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Homepage Ula</title>
-  <meta name="description" content="Description" />
-
-  <!-- Title -->
-  <meta property="og:title" content="" />
+  <meta name="description" content="webpage created during WTF course - constantly changing" />
+  <meta property="og:title" content="Homepage Ula - webpage created during WTF!" />
   <!-- OPTIONAL description. 2-4 sentences. -->
-  <meta property="og:description" content="" />
+  <meta property="og:description" content="tutaj testuję co wyświetla się w hotlinkach" />
   <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-  <meta property="og:url" content="" />
+  <meta property="og:url" content="https://ulakrawczyk.github.io/homepage-ula/" />
   <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+  <meta property="og:image"
+    content="https://github.com/UlaKrawczyk/homepage-ula/blob/master/src/assets/img/banner%20hotlink.jpg" />
 
   <link rel="manifest" href="manifest.json" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
-  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+  <link rel="icon" type="image/png" href="assets/img/svg-landscaping-icon.png" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet">
   <script src="https://kit.fontawesome.com/4decf178c1.js"></script>
   <link rel="stylesheet" href="css/main.css" />
@@ -28,13 +27,23 @@
 
 <body>
   <header class="site-header">
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item"><a class="navigation__link" href="index.html">strona główna</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#diary">pamiętniczek</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#glossary">technologie</a></li>
-      </ul>
-    </nav>
+    <div class="site-header__wrapper">
+
+      <div class="logo">
+        <img class="logo__image" src="assets/img/svg-logo-svg.svg" alt="">
+        <p class="logo__name">Ula K.</p>
+      </div>
+
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="index.html">strona główna</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#diary">pamiętniczek</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#glossary">technologie</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
     <div class="hamburger">
       <i class="fas fa-bars"></i>
       <i class="fas fa-times offIcon"></i>
@@ -131,9 +140,11 @@
   </main>
 
   <footer class="footer">
+    <div class="footer__wrapper">
+      <img class="footer__leaf" src="assets/img/svg-logo-svg.svg" alt="">
+      <p class="footer__paragraph">@Ula Krawczyk - uczę się frontendu, ponieważ sprawia mi niesamowitą frajdę.</p>
+    </div>
     <a href="#top" class="footer__top footer__link">na górę</a>
-    <p class="footer__paragraph">@Ula Krawczyk - uczę się frontendu, ponieważ sprawia mi niesamowitą frajdę.</p>
-    <p class="footer__paragraph">@Ula Krawczyk - nowe commity powstają:).</p>
   </footer>
 
   <script src="js/main.js"></script>
