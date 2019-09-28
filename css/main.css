@@ -510,11 +510,19 @@ main {
     text-decoration: none;
     cursor: pointer;
     font-size: 14px;
-    margin-top: 14px; }
+    margin-top: 14px;
+    margin-bottom: 14px; }
     .diary__link::after {
-      content: "__________";
+      content: "";
       display: block;
-      color: #ad5d4e; }
+      margin-top: 10px;
+      width: 4rem;
+      border-bottom: 1.5px solid #ad5d4e;
+      -webkit-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease; }
+    .diary__link:hover::after {
+      width: 10.3rem; }
   .diary__image {
     width: 100%;
     margin: 2rem 0 2rem 0;
